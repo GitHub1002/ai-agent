@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * @Author Feng
  * @Date 2025/12/3
  **/
-@Component
+//@Component
 public class SpringAiAiInvoke implements CommandLineRunner {
 
     @Resource
@@ -22,10 +22,10 @@ public class SpringAiAiInvoke implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        /*AssistantMessage assistantMessage = dashscopeChatModel.call(new Prompt("你好，我是鱼皮"))
+        AssistantMessage assistantMessage = dashscopeChatModel.call(new Prompt("你好，请介绍你自己"))
                 .getResult()
                 .getOutput();
-        System.out.println(assistantMessage.getText());*/
+        System.out.println(assistantMessage.getText());
     }
 
 }
